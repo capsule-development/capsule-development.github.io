@@ -36,12 +36,9 @@
 html {
 	font-family: "SF UI Display Medium";
 	scroll-behavior: smooth;
-	background-image: url(../images/background/Capsule_Icon5.png);
-	background-repeat: repeat-x;
-	background-size: 3000px 3000px;
 }
 
-div {
+.nav-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -49,20 +46,24 @@ div {
 	letter-spacing: 4px;
 	position: sticky;
 	top: 0;
-  width: auto;
-  height: 75px;
+	width: auto;
+	height: 75px;
 	background-color: rgba(255, 255, 255, 0.98)
 }
 
 li, a, button {
 	text-decoration: none;
-	font-family: "SF UI Display Bold";
 }
 
 li, a {
 	color: #A3AAAE;
-  height: auto;
-  width: auto;
+	height: auto;
+	width: auto;
+}
+
+a {
+	font-family: inherit;
+	transition: all 0.3s ease 0s;
 }
 
 button {
@@ -73,13 +74,23 @@ button {
 h1 {
 	font-family: "SF UI Display Heavy";
 	font-size: 100px;
-	margin: 0;
 }
 
 h2 {
 	font-family: "SF UI Display Heavy";
-	margin: 0;
-	font-size: 60px;
+	font-size: 50px;
+	margin-bottom: 50px;
+}
+
+h3 {
+	font-family: "SF UI Display Heavy";
+	font-size: 30px;
+	color: gray;
+}
+
+p {
+	font-family: "SF UI Display Light";
+	font-size: 30px;
 }
 
 @media (max-width: 420px) {
@@ -92,27 +103,11 @@ h2 {
 	}
 }
 
-.main-title {
-	text-align: center;
-}
-
-.main-title .text {
-	margin: 0;
-}
-
-.main-title .text h3 {
-	font-family: "SF UI Display Bold";
-	font-size: 25px;
-	color: #A3AAAE;
-	margin: 0;
-}
-
-.main-title .text h1 {
-	color: #ffffff;
+#home {
+	height: 85%;
 }
 
 #logo {
-	margin-right: 34px;
 	width: 180px;
 	border-radius: 30%;
 	cursor: pointer;
@@ -132,11 +127,11 @@ h2 {
 	padding: 0px 10px;
 }
 
-.nav__links li a{
-	transition: all 0.3s ease 0s;
+.nav__links li {
+	font-family: "SF UI Display Bold";
 }
 
-.nav__links li a:hover{
+a:hover{
 	color: #8080ff;
 }
 
@@ -153,63 +148,19 @@ button:hover {
 	opacity: 80%;
 }
 
-#Home {
-	padding: 160;
-	height: auto;
-	color: #ffffff;
+section {
+	padding: 60px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	display: flex;
+	padding-bottom: 300px;
+}
+
+section div {
+	display: block;
 }
 
 #about {
-	padding: 160;
-	height: auto;
-	color: #ffffff;
-}
-
-#features {
-	padding: 160;
-	height: auto;
-	color: #ffffff;
-}
-
-#performance {
-	padding: 160;
-	height: 100;
-	color: #ffffff;
-}
-
-#team {
-	padding: 160;
-	height: 100;
-	color: #ffffff;
-}
-
-.wrapHead {
-	width: 90%;
-	margin: 0 auto;
-	transition: all ease-in-out 0.5s;
-}
-
-.wrapHead.fixed-to-top {
-	width: 96%;
-}
-
-section {
-	justify-content: center;
-	z-index: 0;
-}
-
-section h1 {
-	align-content: center;
-	text-transform: capitalize;
-	text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.2);
-}
-
-p {
-	text-transform: capitalize;
-}
-.spacer {
-    background-color: inherit;
-    height: 20px;
-    width: auto;
-    padding-bottom: 100px;
+	background-color: #ECEEFF;
 }
