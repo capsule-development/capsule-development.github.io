@@ -210,7 +210,7 @@ p {
 
 .spacer {
 	background-color: inherit;
-	height: auto;
+	height: 20px;
 	width: auto;
 }
 
