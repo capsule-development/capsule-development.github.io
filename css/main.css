@@ -37,8 +37,8 @@ html {
 	font-family: "SF UI Display Medium";
 	scroll-behavior: smooth;
 	background-image: url(../images/background/Capsule_Icon5.png);
-	background-size: cover;
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 div {
