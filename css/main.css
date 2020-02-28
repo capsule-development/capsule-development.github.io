@@ -204,6 +204,11 @@ section h1 {
 	text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.2);
 }
 
+.spacer {
+	height: auto;
+	width: auto;
+}
+
 p {
 	text-transform: capitalize;
 }
