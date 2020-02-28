@@ -195,7 +195,7 @@ section {
 	
 }
 
-
+/**
 @media (max-width: 420px) {
 	h1 {
 		font-size: 60px;
@@ -216,4 +216,4 @@ section {
 	.big-button button {
 		padding: 10px 15px;
 	}
-}
+} **/
