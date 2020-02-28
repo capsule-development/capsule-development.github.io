@@ -216,8 +216,9 @@ section {
 	.big-button button {
 		padding: 10px 15px;
 	}
+}
 
 	.navbar {
 		max-width: 420px;
+		padding: 10px 15px;
 	}
-}
