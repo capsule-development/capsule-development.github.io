@@ -209,7 +209,7 @@ p {
 }
 
 .spacer {
-	background-color: #8080ff;
+	background-color: inherit;
 	height: auto;
 	width: auto;
 }
