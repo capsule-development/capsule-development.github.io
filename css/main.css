@@ -38,6 +38,7 @@ html {
 	scroll-behavior: smooth;
 	background-image: url(../images/background/Capsule_Icon5.png);
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 div {
