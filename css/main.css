@@ -207,4 +207,9 @@ section h1 {
 p {
 	text-transform: capitalize;
 }
-
+.spacer {
+    background-color: inherit;
+    height: 20px;
+    width: auto;
+    padding-bottom: 100px;
+}
