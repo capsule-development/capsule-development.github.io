@@ -33,6 +33,7 @@
 html {
 	font-family: "SF UI Display Medium";
 	scroll-behavior: smooth;
+	/** width: auto; **/
 }
 
 div {
@@ -196,7 +197,7 @@ section {
 }
 
 
-@media (max-width: 420px) {
+@media (max-width:auto) {
 	h1 {
 		font-size: 60px;
 	}
@@ -217,6 +218,7 @@ section {
 		padding: 10px 15px;
 	}
 }
+
 
 	.navbar {
 		padding: 10px 15px;
