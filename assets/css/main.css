@@ -66,6 +66,16 @@ button:hover {
 	opacity: 80%;
 }
 
+.big-button {
+	padding: 70px;
+}
+
+.big-button button {
+	padding: 20px 70px;
+	font-size: 20px;
+	font-family: "SF UI Display Bold";
+}
+
 h1 {
 	font-family: "SF UI Display Heavy";
 	font-size: 100px;
@@ -103,8 +113,8 @@ section div {
 }
 
 section {
-	width: 100%;
-	padding: 60px;
+	padding-left: 90px;
+	padding-right: 90px;
 	flex-direction: column;
 	display: flex;
 	padding-top: 300px;
@@ -179,5 +189,5 @@ section {
 }
 
 #team {
-	position: relative;
+	
 }
