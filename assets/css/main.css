@@ -33,7 +33,7 @@
 html {
 	font-family: "SF UI Display Medium";
 	scroll-behavior: smooth;
-	/** width: auto; **/
+	width: auto;
 }
 
 div {
@@ -197,7 +197,7 @@ section {
 }
 
 
-@media (max-width:auto) {
+@media (max-width:360px) {
 	h1 {
 		font-size: 60px;
 	}
