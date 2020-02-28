@@ -93,6 +93,11 @@ h3 {
 	color: gray;
 }
 
+p {
+	font-family: "SF UI Display Light";
+	font-size: 30px;
+}
+
 li, a {
 	color: #A3AAAE;
 	height: auto;
@@ -103,22 +108,17 @@ li, a, button {
 	text-decoration: none;
 }
 
-p {
-	font-family: "SF UI Display Light";
-	font-size: 30px;
-}
-
 section div {
 	display: block;
 }
 
 section {
-	padding-left: 90px;
-	padding-right: 90px;
+	padding-left: 12vw;
+	padding-right: 12vw;
 	flex-direction: column;
 	display: flex;
-	padding-top: 300px;
-	padding-bottom: 310px;
+	padding-top: 20vh;
+	padding-bottom: 20vh;
 }
 
 #home {
@@ -131,6 +131,7 @@ section {
 }
 
 .nav-container {
+	text-align: center;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -141,6 +142,8 @@ section {
 	width: auto;
 	height: 75px;
 	background-color: rgba(236, 238, 255, 0.95);
+	z-index: 99;
+	overflow: none;
 }
 
 .nav__links li {
@@ -190,4 +193,27 @@ section {
 
 #team {
 	
+}
+
+
+@media (max-width: 420px) {
+	h1 {
+		font-size: 60px;
+	}
+
+	h2 {
+		font-size: 35px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	p {
+		font-size: 20px;
+	}
+
+	.big-button button {
+		padding: 10px 15px;
+	}
 }
