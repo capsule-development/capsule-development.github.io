@@ -128,7 +128,7 @@ section {
 	letter-spacing: 4px;
 	position: sticky;
 	top: 0;
-	width: 100%;
+	width: auto;
 	height: 75px;
 	background-color: rgba(236, 238, 255, 0.95);
 }
