@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
 		<link rel="shortcut icon" href="assets/images/logo/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="assets/images/logo/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/main-responsive.css">
 	</head>
 	<body>
 		<div class="nav-container">
@@ -14,12 +14,12 @@
 				<ul class="nav__links">
 					<li><a href="#about">ABOUT</a></li>
 					<!-- don't do the FEATURES page yet :) -->
-					<li><a href="#features">FEATURES</a></li>
-					<li><a href="#performance">PERFORMANCE</a></li>
+					<li><a class="shrink" href="#features">FEATURES</a></li>
+					<li><a class="shrink" href="#performance">PERFORMANCE</a></li>
 					<li><a href="#team">TEAM</a></li>
 				</ul>
 			</navbar>
-			<a class="nav-button" href="#"><button>Add Repo</button></a>
+			<a class="nav-button" href="#"><button>+</button></a>
 		</div>
 		<section id="home">
 			<h1>Capsule</h1>
@@ -68,4 +68,6 @@
 			<p>Developer</p>
 		</section>
 	</body>
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<script src="assets/js/navbar.js"></script>
 </html>
