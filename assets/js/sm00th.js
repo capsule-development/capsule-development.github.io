@@ -16,6 +16,6 @@ $('a[href*="#"]').on('click', function(e) {
     $('html, body').animate({
         scrollTop: destination
     // time, animation
-    }, 300, 'swing')
+    }, 500, 'swing')
 });
 
