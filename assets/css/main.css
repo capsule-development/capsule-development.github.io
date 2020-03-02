@@ -240,7 +240,7 @@ section {
 		transform:rotate(-90deg) translateY(-100px);
 	}
 
-	.horizontal-scroll-wapper > div {
+	.horizontal-scroll-wapper > li > a {
 		width: 100px;
 		height: 100px;
 		transform: rotate(90deg);
