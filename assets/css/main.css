@@ -229,3 +229,21 @@ section {
 	.navbar {
 		padding: 10px 15px;
 	}
+
+	.horizontal-scroll-wapper {
+		width: 100px;
+		height: 300px;
+		overflow-y: auto;
+		overflow-x: hidden;
+		transform: rotate(-90deg);
+		transform-origin: right top;
+		transform:rotate(-90deg) translateY(-100px);
+	}
+
+	.horizontal-scroll-wapper > div {
+		width: 100px;
+		height: 100px;
+		transform: rotate(90deg);
+		transform-origin: right top;
+	
+	}
