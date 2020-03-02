@@ -228,8 +228,11 @@ section {
 
 	.navbar {
 		padding: 10px 15px;
+		display: flex;
+		overflow-x: scroll;
+		-webkit-overflow-scrolling: touch;
 	}
-
+/*
 	.horizontal-scroll-wapper {
 		width: 100px;
 		height: 300px;
@@ -247,3 +250,4 @@ section {
 		transform-origin: right top;
 	
 	}
+	*/
