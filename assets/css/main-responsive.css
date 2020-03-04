@@ -76,8 +76,13 @@ button:hover {
 	opacity: 80%;
 }
 
-.big-button {
-	padding: 70px 0;
+.buttons {
+	padding: 10vh 0;
+}
+
+.buttons .big-button {
+	padding: 5px;
+	display: block;
 }
 
 .big-button button {
@@ -86,9 +91,17 @@ button:hover {
 	font-family: "SF UI Display Bold";
 }
 
+.red-button button {
+	background-color: #E23838;
+}
+
 h1 {
 	font-family: "SF UI Display Heavy";
 	font-size: 100px;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
 }
 
 h2 {
@@ -116,10 +129,6 @@ li a {
 
 li, a, button {
 	text-decoration: none;
-}
-
-section div {
-	display: block;
 }
 
 section {
@@ -205,9 +214,9 @@ section {
 }
 
 
-@media (max-width: 510px) {
+@media (max-width: 545px) {
 	h1 {
-		font-size: 20vw;
+		font-size: 15vw;
 	}
 
 	h2 {
@@ -215,7 +224,7 @@ section {
 	}
 
 	h3 {
-		font-size: 20px;
+		font-size: 5vw;
 	}
 
 	p {
@@ -224,5 +233,6 @@ section {
 
 	.big-button button {
 		padding: 20px 35px;
+		font-size: 5vw;
 	}
 }
