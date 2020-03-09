@@ -141,10 +141,28 @@ button {
 section {
     padding-left: 12vw;
     padding-right: 12vw;
-    flex-direction: column;
-    padding-top: 10vh;
+    padding-top: 20vh;
     padding-bottom: 10vh;
-    height: 100%;
+    min-height: 70%;
+    overflow: auto;
+}
+
+section .text {
+    padding-top: 10%;
+}
+
+section .column {
+    float: left;
+    width: 50%;
+}
+
+section .image-container {
+    text-align: right;
+}
+
+section img {
+    width: 50vh;
+    max-width: 600px;
 }
 
 .nav-container {
@@ -177,11 +195,11 @@ section {
 }
 
 #home {
-    padding: 0;
+    display: block;
 }
 
 #home h1 {
-    padding-top: 10%;
+    padding-top: 4vw;
 }
 
 #home h3 {
@@ -220,7 +238,7 @@ section {
     opacity: 80%;
 }
 
-@media (max-width: 545px) {
+@media screen and (max-width: 545px) {
     h1 {
         font-size: 15vw;
     }
@@ -236,5 +254,15 @@ section {
     .big-button button {
         padding: 20px 35px;
         font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    section .column {
+        width: 100%;
+        text-align: center;
+    }
+    section img {
+        width: 100%;
     }
 }
