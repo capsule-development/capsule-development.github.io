@@ -255,6 +255,9 @@ section img {
         padding: 20px 35px;
         font-size: 5vw;
     }
+    section {
+        padding-top: 10vh;
+    }
 }
 
 @media screen and (max-width: 1050px) {
