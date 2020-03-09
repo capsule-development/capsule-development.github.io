@@ -143,7 +143,7 @@ section {
     padding-right: 12vw;
     padding-top: 20vh;
     padding-bottom: 10vh;
-    min-height: 70%;
+    min-height: 100%;
     overflow: auto;
 }
 
