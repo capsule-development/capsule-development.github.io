@@ -165,6 +165,10 @@ section img {
     max-width: 600px;
 }
 
+section h2 {
+	text-align: center;
+}
+
 .nav-container {
     display: flex;
     justify-content: center;
