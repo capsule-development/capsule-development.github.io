@@ -1,14 +1,13 @@
-var user = firebase.auth().currentUser;
+// Listen for user
+auth.onAuthStateChanged(user => {
+	console.log(user.email);
 
-if (user) {
-   console.log("User is still logged in");
-}
+});
 
 
 // Signup JS
-try {
-	const signupForm = document.querySelector("#signup-form");
-
+const signupForm = document.querySelector("#signup-form");
+if (signupForm) {
 	signupForm.addEventListener("submit", (e) => {
 		e.preventDefault();
 
@@ -19,16 +18,17 @@ try {
 
 		// Sign-up user
 		auth.createUserWithEmailAndPassword(email, password).then(cred => {
-			console.log(cred.user);
+			console.log("Account created!");
+			
 			signupForm.reset();
 			window.location.href = "../";
 		});
 	});
-} catch(e) {}
+}
 
 // Loggout
-try {
-	const logout = document.querySelector("#logout");
+const logout = document.querySelector("#logout");
+if (logout) {
 	logout.addEventListener("click", (e) => {
 		e.preventDefault();
 
@@ -37,4 +37,23 @@ try {
 			console.log("User has logged out!");
 		});
 	});
-} catch(e) {}
+}
+
+
+// Login
+const loginForm = document.querySelector("#login-form");
+if (loginForm) {
+	loginForm.addEventListener("submit", (e) => {
+		e.preventDefault();
+
+		// Get user info
+		const email = loginForm["email"].value;
+		const password = loginForm["pswd"].value;
+
+		auth.signInWithEmailAndPassword(email, password).then(cred => {
+			console.log("Login succesful!");
+			loginForm.reset();
+			window.location.href = "../";
+		});
+	});
+}
