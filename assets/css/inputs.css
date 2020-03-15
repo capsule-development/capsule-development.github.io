@@ -1,6 +1,9 @@
 .forms {
 	text-align: center;
 	font-size: 150%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .input {
