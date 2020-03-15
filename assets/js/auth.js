@@ -1,7 +1,11 @@
 // Listen for user
 auth.onAuthStateChanged(user => {
-	console.log(user.email);
-
+	if (user) {
+		console.log("User email: " + user.email);
+	} else {
+		console.log("No user logged in.");
+	}
+	
 });
 
 
@@ -19,7 +23,7 @@ if (signupForm) {
 		// Sign-up user
 		auth.createUserWithEmailAndPassword(email, password).then(cred => {
 			console.log("Account created!");
-			
+
 			signupForm.reset();
 			window.location.href = "../";
 		});
