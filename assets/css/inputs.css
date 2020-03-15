@@ -1,4 +1,9 @@
+.big-button {
+	padding-top: 3vh; 
+}
+
 .forms {
+	margin-top: 4em;
 	text-align: center;
 	font-size: 150%;
 	display: flex;
@@ -55,9 +60,11 @@
 	width: 100%;
 }
 
+
+
 /* Jiro */
 .input--jiro {
-	margin-top: 2em;
+	margin-top: 1.2em;
 }
 
 .input__field--jiro {
