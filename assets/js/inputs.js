@@ -3,19 +3,30 @@ console.log("// FORMS INPUT CSS BY MARY LOU //\n" +
             "Great thanks to all open-sourcers!");
 
 // This is to change to label text
-$("#email > input").on("keyup paste", function() {
-    if ($("#email > input").val() == "") {
-        $("#email > label > span").text("Enter your email.");
+$(".name > input").on("keydown paste", function() {
+    if ($(".name > input").val() == "") {
+        $(".name > label > span").text("Enter Your Username.");
+    } 
+    else if ($(".name > input").val().length < 3) {
+        $(".name > label > span").text("Name should be at least three characters.");
     } else {
-        $("#email > label > span").text("Email:");
+        $(".name > label > span").text("Username:");
     }
 });
 
-$("#pswd > input").on("keyup paste", function() {
-    if ($("#pswd > input").val() == "") {
-        $("#pswd > label > span").text("Enter your password.");
+$(".email > input").on("keyup paste", function() {
+    if ($(".email > input").val() == "") {
+        $(".email > label > span").text("Enter your email.");
     } else {
-        $("#pswd > label > span").text("Password:");
+        $(".email > label > span").text("Email:");
+    }
+});
+
+$(".pswd > input").on("keyup paste", function() {
+    if ($(".pswd > input").val() == "") {
+        $(".pswd > label > span").text("Enter your password.");
+    } else {
+        $(".pswd > label > span").text("Password:");
     }
 });
 

@@ -23,24 +23,30 @@
         <a class="nav-button" href="#"><button>+</button></a>
     </div>
     <section id="home">
-        <h1>Login</h1>
-        <h3>You know what to do!</h3>
+        <h1>Sign-Up</h1>
+        <h3>Create your Capsule Account here!</h3>
         <div class="forms">
-            <form id="signin-form">
-                <span id="email" class="input input--jiro">
-                    <input required class="input__field input__field--jiro" type="email"/>
+            <form id="signup-form">
+                <span class="name input input--jiro">
+                    <input id="name" required class="input__field input__field--jiro"/>
+                    <label class="input__label input__label--jiro">
+                        <span class="input__label-content input__label-content--jiro">Enter Your Username.</span>
+                    </label>
+                </span>
+                <span class="email input input--jiro">
+                    <input id="email" required class="input__field input__field--jiro" type="email" autocomplete="username" />
                     <label class="input__label input__label--jiro">
                         <span class="input__label-content input__label-content--jiro">Enter Email.</span>
                     </label>
                 </span>
-                <span id="pswd" class="input input--jiro">
-                    <input required class="input__field input__field--jiro" type="password"/>
+                <span class="pswd input input--jiro">
+                    <input id="pswd" required class="input__field input__field--jiro" type="password" autocomplete="new-password" />
                     <label class="input__label input__label--jiro">
                         <span class="input__label-content input__label-content--jiro">Enter Password.</span>
                     </label>
                 </span>
                 <div class="big-button">
-                    <button type="submit">Sign In</button>
+                    <button type="submit">Create Account</button>
                 </div>
             </form>
         </div>
