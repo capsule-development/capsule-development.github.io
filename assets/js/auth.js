@@ -1,11 +1,17 @@
 // Listen for user
 auth.onAuthStateChanged(user => {
 	if (user) {
+		console.log("Saved previous sesssion!");
 		console.log("User email: " + user.email);
+		$("#subtitle").text("Hello, " + user.displayName);
+		$("#guest-buttons").hide();
+		$("#delete").show();
 	} else {
 		console.log("No user logged in.");
+		$("#subtitle").text("Capsule Accounts have access to many features!");
+		$("#guest-buttons").show();
+		$("#delete").hide();
 	}
-	
 });
 
 
@@ -22,10 +28,17 @@ if (signupForm) {
 
 		// Sign-up user
 		auth.createUserWithEmailAndPassword(email, password).then(cred => {
-			console.log("Account created!");
+			
 
-			signupForm.reset();
-			window.location.href = "../";
+			auth.currentUser.updateProfile({
+				displayName: name
+			}).then(function() {
+				console.log("Account created!");
+				signupForm.reset();
+				window.location.href = "../";
+			}).catch(function(error) {
+				alert(error);
+			});
 		});
 	});
 }
@@ -60,4 +73,19 @@ if (loginForm) {
 			window.location.href = "../";
 		});
 	});
+}
+
+// Delete Account
+const deleteButton = document.querySelector("#delete");
+if (deleteButton) {
+	deleteButton.addEventListener("click", (e) => {
+		e.preventDefault();
+
+		// Ask for confirmation
+		if (prompt("ARE YOU SURE?") == "yes") {
+			auth.currentUser.delete().then(() => {
+				console.log("User deleted");
+			});
+		}
+	})
 }
