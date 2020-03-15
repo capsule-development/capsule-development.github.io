@@ -26,11 +26,6 @@
     src: local('SF UI Display Heavy'), url('../fonts/sf-ui-display-heavy-586470160b9e5.woff') format('woff');
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 
 /*
 Gray: #8e8e93
@@ -81,7 +76,7 @@ button:hover {
     text-align: center;
 }
 
-.buttons .big-button {
+.big-button {
     padding: 5px;
     display: block;
 }
@@ -191,6 +186,7 @@ section h2:hover, section h3:hover {
 }
 
 .nav-container {
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -278,7 +274,7 @@ section h2:hover, section h3:hover {
     }
     .big-button button {
         padding: 20px 35px;
-        font-size: 5vw;
+        font-size: 4vw;
     }
     section {
         padding-top: 10vh;
