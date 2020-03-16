@@ -6,9 +6,6 @@ console.log("// FORMS INPUT CSS BY MARY LOU //\n" +
 $(".name > input").on("keydown paste", function() {
     if ($(".name > input").val() == "") {
         $(".name > label > span").text("Enter Your Username.");
-    } 
-    else if ($(".name > input").val().length < 3) {
-        $(".name > label > span").text("Name should be at least three characters.");
     } else {
         $(".name > label > span").text("Username:");
     }
