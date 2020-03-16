@@ -1,16 +1,20 @@
+$("#guest-buttons").hide();
+$("#user-buttons").hide();
+
 // Listen for user
 auth.onAuthStateChanged(user => {
     if (user) {
         console.log("Saved previous sesssion!");
         console.log("User email: " + user.email);
         $("#subtitle").text("Hello, " + user.displayName);
+
         $("#guest-buttons").hide();
-        $("#delete").show();
+        $("#user-buttons").fadeIn("slow");
     } else {
         console.log("No user logged in.");
         $("#subtitle").text("Capsule Accounts have access to many features!");
-        $("#guest-buttons").show();
-        $("#delete").hide();
+        $("#guest-buttons").fadeIn("slow");
+        $("#user-buttons").hide();
     }
 });
 
@@ -71,7 +75,8 @@ if (loginForm) {
 			loginForm.reset();
 			window.location.href = "../";
 		}).catch(function(error) {
-			$("#subtitle-sign").text(error);
+			console.log(error)
+			$("#subtitle-sign").text("Email and password do not match.");
 		});;
 	});
 }
@@ -83,7 +88,7 @@ if (deleteButton) {
         e.preventDefault();
 
         // Ask for confirmation
-		if (prompt("ARE YOU SURE?") == "yes") {
+		if (prompt("Are you sure about this? (yes | no)").toLowerCase() == "yes") {
 			auth.currentUser.delete().then(() => {
 				console.log("User deleted");
 			}).catch(function(error) {
@@ -91,4 +96,24 @@ if (deleteButton) {
 			});
 		}
     })
+}
+
+// Send Email Reset Code
+const resetForm = document.querySelector("#reset-form");
+if (resetForm) {
+	resetForm.addEventListener("submit", (e) => {
+		e.preventDefault();
+
+		// Get form data
+		const email = resetForm["email"].value;
+		// Send
+		auth.sendPasswordResetEmail(email).then(() => {
+			console.log("Email sent");
+			$("#subtitle-sign").text("Go check your email!");
+		}).catch(function(error) {
+			$("#subtitle-sign").text(error);
+		});
+
+		$("#subtitle-sign").text("Please wait...");
+	});
 }

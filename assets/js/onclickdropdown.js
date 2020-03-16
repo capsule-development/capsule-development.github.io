@@ -17,3 +17,17 @@ window.onclick = function (event) {
         }
     }
 }
+
+const b = document.querySelector("#dropbtn");
+b.addEventListener("onclick", (e) => {
+    e.disableDefault();
+    console.log("yes")
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+        }
+    }
+});
