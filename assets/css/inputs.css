@@ -24,17 +24,6 @@ select:-webkit-autofill:focus {
 	align-items: center;
 }
 
-.container {
-	margin: 0 auto;
-	text-align: center;
-	overflow: hidden;
-}
-
-.content {
-	font-size: 150%;
-	padding: 3em 0;
-}
-
 .input {
 	position: relative;
 	z-index: 1;
