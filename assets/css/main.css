@@ -31,6 +31,7 @@ Gray: #8e8e93
     font-weight: normal;
     src: local('SF UI Display Heavy'), url('../fonts/sf-ui-display-heavy-586470160b9e5.woff') format('woff');
 }
+*, *:after, *:before {/* -webkit-box-sizing: border-box; */box-sizing: border-box;}
 
 * {
     margin: 0;
