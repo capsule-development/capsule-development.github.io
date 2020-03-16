@@ -71,7 +71,8 @@ if (loginForm) {
 			loginForm.reset();
 			window.location.href = "../";
 		}).catch(function(error) {
-			$("#subtitle-sign").text(error);
+			console.log(error)
+			$("#subtitle-sign").text("Email and password do not match.");
 		});;
 	});
 }
@@ -91,4 +92,24 @@ if (deleteButton) {
 			});
 		}
     })
+}
+
+// Send Email Reset Code
+const resetForm = document.querySelector("#reset-form");
+if (resetForm) {
+	resetForm.addEventListener("submit", (e) => {
+		e.preventDefault();
+
+		// Get form data
+		const email = resetForm["email"].value;
+		// Send
+		auth.sendPasswordResetEmail(email).then(() => {
+			console.log("Email sent");
+			$("#subtitle-sign").text("Go check your email!");
+		}).catch(function(error) {
+			$("#subtitle-sign").text(error);
+		});
+
+		$("#subtitle-sign").text("Please wait...");
+	});
 }
