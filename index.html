@@ -16,13 +16,18 @@
         <navbar id="navbar">
             <ul class="nav__links">
                 <li><a href="#about">ABOUT</a></li>
-                <!-- don't do the FEATURES page yet :) -->
                 <li><a class="shrink" href="#features">FEATURES</a></li>
                 <li><a class="shrink" href="#performance">PERFORMANCE</a></li>
                 <li><a href="#team">TEAM</a></li>
             </ul>
         </navbar>
-        <a class="nav-button" href="#"><button>+</button></a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">+</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="account/index.html">Login</a>
+                <a href="#">Repo</a>
+            </div>
+        </div>
     </div>
     <section id="home">
         <h1>Capsule</h1>
