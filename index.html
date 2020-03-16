@@ -1,4 +1,4 @@
-<html> 
+<html>
 
 <head>
     <title>Capsule | Package Manager</title>
@@ -22,7 +22,13 @@
                 <li><a href="#team">TEAM</a></li>
             </ul>
         </navbar>
-        <a class="nav-button" href="#"><button>+</button></a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">+</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="account/index.html">Login</a>
+                <a href="#">Repo</a>
+            </div>
+        </div>
     </div>
     <section id="home">
         <h1>Capsule</h1>
@@ -32,55 +38,56 @@
             <a class="big-button red-button" href="https://github.com/trycapsuledev/Capsule-Bugs"><button>Report Bug</button></a>
         </div>
     </section>
-    <section id="about">    
-        <div class="column text">   
-            <h2>About</h2>  
-            <p>Capsule is an upcoming package manager for your jailbroken devices. Developed with care by the <a href="https://twitter.com/try_capsule">@try_capsule</a> team!</p>  
-            <p><br>We aim to bring a modern, fast, and simple package manager.</p>  
-        </div>  
-        <div class="column image-container">    
-            <img src="assets/images/mockups/mockup_combined.png">   
-        </div>  
-    </section>  
-    <section id="features"> 
-        <div class="column text">   
-            <h2>Features</h2>   
-            <p>iOS 13 design kept in mind: More coming soon.</p>    
-        </div>  
-    </section>  
-    <section id="performance">  
-        <div class="column text">   
-            <h2>Performance</h2>    
-            <p>Coming soon</p>  
-        </div>  
-    </section>  
-    <section style="text-align: center;" id="team"> 
-        <h2 style="margin-bottom: 0">Capsule Team</h2>  
-        <div class="column text">   
-            <h3>Thenatis</h3>   
-            <p>Designer, Social Media, Coordinator</p>  
-            <h3>c0dine</h3> 
-            <p>Developer, Coordinator</p>   
-            <h3>Thomz</h3>  
-            <p>Developer</p>    
-            <h3>Luke</h3>   
-            <p>Developer</p>    
-            <h3>machport</h3>   
-            <p>Developer</p>    
-        </div>  
-        <div class="column text">   
-            <h3>b0kch01</h3>    
-            <p>Web Developer</p>    
-            <h3>pixeljellyfish</h3> 
-            <p>Web Developer</p>    
-            <h3>coltonios</h3>  
-            <p>Designer, Web Developer</p>  
-            <h3>J3nRa1n</h3>    
-            <p>Designer</p> 
-        </div>  
+    <section id="about">
+        <div class="column text">
+            <h2>About</h2>
+            <p>Capsule is an upcoming package manager for your jailbroken devices. Developed with care by the <a href="https://twitter.com/try_capsule">@try_capsule</a> team!</p>
+            <p><br>We aim to bring a modern, fast, and simple package manager.</p>
+        </div>
+        <div class="column image-container">
+            <img src="assets/images/mockups/mockup_combined.png">
+        </div>
+    </section>
+    <section id="features">
+        <div class="column text">
+            <h2>Features</h2>
+            <p>iOS 13 design kept in mind: More coming soon.</p>
+        </div>
+    </section>
+    <section id="performance">
+        <div class="column text">
+            <h2>Performance</h2>
+            <p>Coming soon</p>
+        </div>
+    </section>
+    <section style="text-align: center;" id="team">
+        <h2 style="margin-bottom: 0">Capsule Team</h2>
+        <div class="column text">
+            <h3>Thenatis</h3>
+            <p>Designer, Social Media, Coordinator</p>
+            <h3>c0dine</h3>
+            <p>Developer, Coordinator</p>
+            <h3>Thomz</h3>
+            <p>Developer</p>
+            <h3>Luke</h3>
+            <p>Developer</p>
+            <h3>machport</h3>
+            <p>Developer</p>
+        </div>
+        <div class="column text">
+            <h3>b0kch01</h3>
+            <p>Web Developer</p>
+            <h3>pixeljellyfish</h3>
+            <p>Web Developer</p>
+            <h3>coltonios</h3>
+            <p>Designer, Web Developer</p>
+            <h3>J3nRa1n</h3>
+            <p>Designer</p>
+        </div>
     </section>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="assets/js/navbar.js"></script>
 <script src="assets/js/sm00th.js"></script>
+
 </html>
