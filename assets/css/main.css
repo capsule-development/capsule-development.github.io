@@ -267,27 +267,6 @@ section {
     display: inline-block;
 }
 
-
-/* Dropdown on click */
-
-.dropbtn {
-    background-color: #8080ff;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropbtn:hover {
-    background-color: #3c3ca5;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
