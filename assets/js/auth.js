@@ -37,7 +37,7 @@ if (signupForm) {
 				signupForm.reset();
 				window.location.href = "../";
 			}).catch(function(error) {
-				alert(error);
+				$("#subtitle-sign").text(error);
 			});
 		});
 	});
@@ -71,7 +71,9 @@ if (loginForm) {
 			console.log("Login succesful!");
 			loginForm.reset();
 			window.location.href = "../";
-		});
+		}).catch(function(error) {
+			$("#subtitle-sign").text(error);
+		});;
 	});
 }
 
@@ -85,6 +87,8 @@ if (deleteButton) {
 		if (prompt("ARE YOU SURE?") == "yes") {
 			auth.currentUser.delete().then(() => {
 				console.log("User deleted");
+			}).catch(function(error) {
+				$("#subtitle-sign").text(error);
 			});
 		}
 	})

@@ -148,6 +148,7 @@ section {
 
 section .text {
     padding-top: 10%;
+    text-align: center;
 }
 
 section .column {
@@ -283,7 +284,6 @@ section h2:hover, section h3:hover {
 @media screen and (max-width: 1050px) {
     section .column {
         width: 100%;
-        text-align: center;
     }
     section img {
         width: 100%;
