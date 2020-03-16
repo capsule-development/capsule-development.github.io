@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <title>Capsule | Package Manager</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,20 +7,26 @@
     <link rel="icon" href="assets/images/logo/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/main-responsive.css">
 </head>
-
 <body>
     <div class="nav-container">
         <a href="#"><img id="logo" src="assets/images/logo/logo glyph.png"></a>
         <navbar id="navbar">
             <ul class="nav__links">
                 <li><a href="#about">ABOUT</a></li>
-                <!-- don't do the FEATURES page yet :) -->
                 <li><a class="shrink" href="#features">FEATURES</a></li>
                 <li><a class="shrink" href="#performance">PERFORMANCE</a></li>
                 <li><a href="#team">TEAM</a></li>
             </ul>
         </navbar>
-        <a class="nav-button" href="#"><button>+</button></a>
+        <div class="nav-button">
+        <div class="dropdown">
+            <a onclick="myFunction" class="dropbtn">+</a>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">repo</a>
+                <a href="#">Log-in</a>
+            </div>
+        </div>
+        </div>
     </div>
     <section id="home">
         <h1>Capsule</h1>
@@ -91,5 +96,5 @@
 <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-analytics.js"></script>
 <script src="assets/js/firebase-stuff.js"></script>
 <script src="assets/js/auth.js"></script>
-
+<script src="assets/js/onclickdropdown.js"></script>
 </html>
