@@ -1,11 +1,12 @@
 <html>
 
 <head>
-    <title>Capsule | Package Manager</title>
+    <title>Capsule | Account</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
     <link rel="shortcut icon" href="../assets/images/logo/favicon.ico" type="image/x-icon">
     <link rel="icon" href="../assets/images/logo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" href="../assets/css/main-responsive.css">
 </head>
 
@@ -14,24 +15,26 @@
         <a href="#"><img id="logo" src="../assets/images/logo/logo glyph.png"></a>
         <navbar id="navbar">
             <ul class="nav__links">
-                <li><a href="#about">ABOUT</a></li>
-                <!-- don't do the FEATURES page yet :) -->
-                <li><a class="shrink" href="#features">FEATURES</a></li>
-                <li><a class="shrink" href="#performance">PERFORMANCE</a></li>
-                <li><a href="#team">TEAM</a></li>
+                <li><a href="../">HOME</a></li>
+                <li><a href="#" id="logout">LOGOUT</a></li>
             </ul>
         </navbar>
         <a class="nav-button" href="#"><button>+</button></a>
     </div>
     <section id="home">
-        <h1>Capsule</h1>
-        <h3>An all new package manager</h3>
-        <div class="buttons">
-            <a class="big-button" href="">
-                <button><span>Sign-In</span></button>
+        <h1>Account</h1>
+        <h3 id="subtitle">Capsule Accounts have access to many features!</h3>
+        <div id="guest-buttons" class="buttons">
+            <a class="big-button" href="login">
+                <button>I have an account</button>
             </a>
-            <a class="big-button" href="">
-                <button><span>Sign-Up</span></button>
+            <a class="big-button" href="signup">
+                <button>I need an account</button>
+            </a>
+        </div>
+        <div id="user-buttons" class="buttons">
+            <a class="big-button red-button">
+                <button id="delete">Delete Account</button>
             </a>
         </div>
     </section>
@@ -46,7 +49,6 @@
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-analytics.js"></script>
-<script src="../assets/js/firebase-stuff.js"></script>
-<script src="../assets/js/auth.js"></script>
-
+<script src="../../assets/js/firebase-stuff.js"></script>
+<script src="../../assets/js/auth.js"></script>
 </html>

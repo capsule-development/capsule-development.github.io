@@ -26,11 +26,6 @@
     src: local('SF UI Display Heavy'), url('../fonts/sf-ui-display-heavy-586470160b9e5.woff') format('woff');
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 
 /*
 Gray: #8e8e93
@@ -67,9 +62,12 @@ button {
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
     font-size: 15px;
     font-weight: 800;
+    -webkit-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
+    -moz-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
+    -o-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
+    transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
 }
 
 button:hover {
@@ -81,19 +79,19 @@ button:hover {
     text-align: center;
 }
 
-.buttons .big-button {
+.big-button {
     padding: 5px;
     display: block;
+    -webkit-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
+    -moz-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
+    -o-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
+    transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
 }
 
 .big-button button {
     padding: 20px 70px;
     font-size: 20px;
     font-family: "SF UI Display Bold";
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
-    transition: all 200ms ease;
 }
 
 .big-button:hover {
@@ -108,10 +106,6 @@ h1 {
     text-align: center;
     font-family: "SF UI Display Heavy";
     font-size: 100px;
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
-    transition: all 200ms ease;
 }
 
 h2 {
@@ -191,6 +185,7 @@ section h2:hover, section h3:hover {
 }
 
 .nav-container {
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -278,7 +273,7 @@ section h2:hover, section h3:hover {
     }
     .big-button button {
         padding: 20px 35px;
-        font-size: 5vw;
+        font-size: 4vw;
     }
     section {
         padding-top: 10vh;

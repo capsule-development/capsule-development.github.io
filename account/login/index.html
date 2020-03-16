@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>Capsule | Sign-In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <link rel="shortcut icon" href="../../assets/images/logo/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../assets/images/logo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../assets/css/main-responsive.css">
+    <link rel="stylesheet" href="../../assets/css/inputs.css">
+</head>
+
+<body>
+    <div class="nav-container">
+        <a href="#"><img id="logo" src="../../assets/images/logo/logo glyph.png"></a>
+        <navbar id="navbar">
+            <ul class="nav__links">
+                <li><a href="../../">HOME</a></li>
+                <li><a href="../">ACCOUNT</a></li>
+            </ul>
+        </navbar>
+        <a class="nav-button" href="#"><button>+</button></a>
+    </div>
+    <section id="home">
+        <h1>Login</h1>
+        <h3>You know what to do!</h3>
+        <div class="forms">
+            <form id="login-form">
+                <span class="email input input--jiro">
+                    <input id="email" required class="input__field input__field--jiro" type="email" autocomplete="username" />
+                    <label class="input__label input__label--jiro">
+                        <span class="input__label-content input__label-content--jiro">Enter Email.</span>
+                    </label>
+                </span>
+                <span class="pswd input input--jiro">
+                    <input id="pswd" required class="input__field input__field--jiro" type="password" autocomplete="current-password"/>
+                    <label class="input__label input__label--jiro">
+                        <span class="input__label-content input__label-content--jiro">Enter Password.</span>
+                    </label>
+                </span>
+                <div class="big-button">
+                    <button type="submit">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../../assets/js/navbar.js"></script>
+<script src="../../assets/js/sm00th.js"></script>
+<script src="../../assets/js/inputs.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-firestore.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-analytics.js"></script>
+<script src="../../assets/js/firebase-stuff.js"></script>
+<script src="../../assets/js/auth.js"></script>
+<script src="../../assets/js/classie.js"></script>
+</html>
