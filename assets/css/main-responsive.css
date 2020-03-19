@@ -244,6 +244,12 @@ section h2:hover, section h3:hover {
     margin: 0 13vw;
 }
 
+.nav-button {
+    background-color: #8080ff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
 #home {
     display: block;
     text-align: center;
