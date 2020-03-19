@@ -72,7 +72,7 @@ a:hover {
 }
 
 .neo-button {
-    margin: 5px;
+    margin: 1em;
     border: none;
     outline: none;
     font-size: 16px;
@@ -88,12 +88,12 @@ a:hover {
     font-weight: 600;
 }
 
-.squish .neo-button:hover {
+.squish.neo-button:hover {
     box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
     transform: scale(1);
 }
 
-.squish .neo-button:active {
+.squish.neo-button:active {
     box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
     transform: scale(1);
     transition: none;

@@ -92,7 +92,7 @@ if (deleteButton) {
 
         // Ask for confirmation
         const conf = prompt("Are you sure about this? (yes | no)");
-		if (conf != "" || conf.toLowerCase() == "yes") {
+		if (conf != "" && conf.toLowerCase() == "yes") {
 			auth.currentUser.delete().then(() => {
 				console.log("User deleted");
 			}).catch(function(error) {
@@ -110,7 +110,7 @@ if (changeName) {
 
         const newName = prompt("UI still a work in progress; give the new name:");
 
-        if (newName != "") {
+        if (newName.length() < 3) {
 	        auth.currentUser.updateProfile({
 	        	displayName: newName
 	        }).then(function() {
@@ -119,6 +119,8 @@ if (changeName) {
 	        }).catch(function(error) {
 	        	alert(error);
 	        });
+	    } else {
+	    	$("#subtitle").text("Pick a longer name.");
 	    }
     })
 }
