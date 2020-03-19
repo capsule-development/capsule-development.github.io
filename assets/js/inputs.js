@@ -27,8 +27,9 @@ $(".pswd > input").on("keyup paste", function() {
     }
 });
 
-$("#account-pp").click(function() {
-    $(this).css("box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;");
+$("#account-pp").on("mousedown", function() {
+    console.log("hi")
+    $("#account-pp").css({"box-shadow": "inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;"});
 });
 
 

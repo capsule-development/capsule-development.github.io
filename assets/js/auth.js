@@ -1,22 +1,23 @@
-$("#guest-buttons").hide();
-$("#user-buttons").hide();
-
-// Listen for user
-auth.onAuthStateChanged(user => {
-    if (user) {
+function renderUI(user) {
+	if (user) {
         console.log("Saved previous sesssion!");
         console.log("User email: " + user.email);
         $("#subtitle").text("Hello, " + user.displayName);
         $("#guest-buttons").hide();
-        $("#account-pp").attr("src", user.photoURL);
-
+		$("#account-pp > img").attr("src", user.photoURL);
         $("#user-buttons").fadeIn("slow");
     } else {
         console.log("No user logged in.");
         $("#subtitle").text("Capsule Accounts have access to many features!");
         $("#guest-buttons").fadeIn("slow");
         $("#user-buttons").hide();
+        $("#account-pp > img").attr("src", "https://trycapsuledev.github.io/assets/images/logo/logo.png");
     }
+}
+
+// Listen for user
+auth.onAuthStateChanged(user => {
+    renderUI(user);
 });
 
 
@@ -36,7 +37,7 @@ if (signupForm) {
 
 			auth.currentUser.updateProfile({
 				displayName: name,
-				photoURL: "https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
+				photoURL: "https://www.searchpng.com/wp-content/uploads/2019/02/Men-Profile-Image-715x657.png"
 			}).then(function() {
 				console.log("Account created!");
 				signupForm.reset();
@@ -90,7 +91,8 @@ if (deleteButton) {
         e.preventDefault();
 
         // Ask for confirmation
-		if (prompt("Are you sure about this? (yes | no)").toLowerCase() == "yes") {
+        const conf = prompt("Are you sure about this? (yes | no)");
+		if (conf != "" || conf.toLowerCase() == "yes") {
 			auth.currentUser.delete().then(() => {
 				console.log("User deleted");
 			}).catch(function(error) {
@@ -105,6 +107,40 @@ const changeName = document.querySelector("#name-change");
 if (changeName) {
     changeName.addEventListener("click", (e) => {
         e.preventDefault();
+
+        const newName = prompt("UI still a work in progress; give the new name:");
+
+        if (newName != "") {
+	        auth.currentUser.updateProfile({
+	        	displayName: newName
+	        }).then(function() {
+	        	console.log("name changed");
+	        	renderUI(auth.currentUser);
+	        }).catch(function(error) {
+	        	alert(error);
+	        });
+	    }
+    })
+}
+
+// Change Name
+const changePhoto = document.querySelector("#pp-change");
+if (changePhoto) {
+    changePhoto.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        const url = prompt("UI still a work in progress; give the new url:");
+        console.log(url)
+        if (url != "") {
+	        auth.currentUser.updateProfile({
+	        	photoURL: url
+	        }).then(function() {
+	        	console.log("profile pic changed");
+	        	renderUI(auth.currentUser);
+	        }).catch(function(error) {
+	        	alert(error);
+	        });
+	    }
     })
 }
 
