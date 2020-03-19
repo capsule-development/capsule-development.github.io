@@ -99,10 +99,6 @@ a:hover {
     transition: none;
 }
 
-/*button:hover {
-    opacity: 80%;
-}*/
-
 .buttons {
     padding: 10vh 0;
     display: flex;
@@ -124,8 +120,9 @@ a:hover {
     font-size: 20px;
 }
 
-.big-button:hover {
+.big-button button:hover {
     transform: scale(1.05);
+    opacity: 80%;
 }
 
 .red-button button {

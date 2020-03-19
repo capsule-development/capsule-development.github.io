@@ -32,20 +32,24 @@ if (signupForm) {
         const email = signupForm["email"].value;
         const password = signupForm["pswd"].value;
 
-        // Sign-up user
-        auth.createUserWithEmailAndPassword(email, password).then(cred => {
+        if (name.length < 3) {
+        	$("#subtitle-sign").text("Please give a longer name.");
+        } else {
+        	// Sign-up user
+	        auth.createUserWithEmailAndPassword(email, password).then(cred => {
 
-			auth.currentUser.updateProfile({
-				displayName: name,
-				photoURL: "https://www.searchpng.com/wp-content/uploads/2019/02/Men-Profile-Image-715x657.png"
-			}).then(function() {
-				console.log("Account created!");
-				signupForm.reset();
-				window.location.href = "../";
-			}).catch(function(error) {
-				$("#subtitle-sign").text(error);
+				auth.currentUser.updateProfile({
+					displayName: name,
+					photoURL: "https://www.searchpng.com/wp-content/uploads/2019/02/Men-Profile-Image-715x657.png"
+				}).then(function() {
+					console.log("Account created!");
+					signupForm.reset();
+					window.location.href = "../";
+				}).catch(function(error) {
+					$("#subtitle-sign").text(error);
+				});
 			});
-		});
+	    }
 	});
 }
 
@@ -109,8 +113,7 @@ if (changeName) {
         e.preventDefault();
 
         const newName = prompt("UI still a work in progress; give the new name:");
-
-        if (newName.length() < 3) {
+        if (newName.length > 3) {
 	        auth.currentUser.updateProfile({
 	        	displayName: newName
 	        }).then(function() {
