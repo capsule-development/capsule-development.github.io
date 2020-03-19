@@ -7,8 +7,9 @@ auth.onAuthStateChanged(user => {
         console.log("Saved previous sesssion!");
         console.log("User email: " + user.email);
         $("#subtitle").text("Hello, " + user.displayName);
-
         $("#guest-buttons").hide();
+        $("#account-pp").attr("src", user.photoURL);
+
         $("#user-buttons").fadeIn("slow");
     } else {
         console.log("No user logged in.");
@@ -34,7 +35,8 @@ if (signupForm) {
         auth.createUserWithEmailAndPassword(email, password).then(cred => {
 
 			auth.currentUser.updateProfile({
-				displayName: name
+				displayName: name,
+				photoURL: "https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
 			}).then(function() {
 				console.log("Account created!");
 				signupForm.reset();
@@ -92,9 +94,17 @@ if (deleteButton) {
 			auth.currentUser.delete().then(() => {
 				console.log("User deleted");
 			}).catch(function(error) {
-				$("#subtitle-sign").text(error);
+				$("#subtitle").text("Re-login and try again.");
 			});
 		}
+    })
+}
+
+// Change Name
+const changeName = document.querySelector("#name-change");
+if (changeName) {
+    changeName.addEventListener("click", (e) => {
+        e.preventDefault();
     })
 }
 

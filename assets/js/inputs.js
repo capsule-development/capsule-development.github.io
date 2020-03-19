@@ -27,6 +27,10 @@ $(".pswd > input").on("keyup paste", function() {
     }
 });
 
+$("#account-pp").click(function() {
+    $(this).css("box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;");
+});
+
 
 // Makes sure that the input is always focused if there is text
 (function() {
