@@ -30,7 +30,12 @@
 /*
 Gray: #8e8e93
 */
-*, *:after, *:before {box-sizing: border-box;}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
 
 html {
     font-family: "SF UI Display Medium";
@@ -69,34 +74,6 @@ a:hover {
     -moz-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
     -o-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
     transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
-}
-
-.neo-button {
-    margin: 1em;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    border-radius: 320px;
-    padding: 16px;
-    background-color: #EBECF0;
-    text-shadow: 1px 1px 0 #FFF;
-    color: #61677C;
-    font-weight: bold;
-    box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.squish.neo-button:hover {
-    box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
-    transform: scale(1);
-}
-
-.squish.neo-button:active {
-    box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
-    transform: scale(1);
-    transition: none;
 }
 
 .buttons {
@@ -199,15 +176,17 @@ section img:hover {
     transform: scale(1.05);
 }
 
-section h2, section h3 {
-	text-align: center;
+section h2,
+section h3 {
+    text-align: center;
     -webkit-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
     -moz-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
     -o-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
     transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
 }
 
-section h2:hover, section h3:hover {
+section h2:hover,
+section h3:hover {
     transform: scale(1.05);
 }
 
@@ -294,27 +273,27 @@ section h2:hover, section h3:hover {
 
 #account-home {
     display: block;
-    background-color:#E0E5EC;
+    background-color: #E0E5EC;
     text-align: center;
 }
 
-#account-pp img{
+#account-pp img {
     width: 20vw;
     height: 20vw;
     max-width: 150px;
     max-height: 150px;
-    object-fit:cover;
+    object-fit: cover;
     border-radius: 50%;
     box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
     transition: all 0.2s ease-in-out;
 }
 
-#account-pp:hover img{
+#account-pp:hover img {
     box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
     transform: scale(0.96);
 }
 
-#account-pp:active img{
+#account-pp:active img {
     box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
     transition: none;
     transform: scale(0.94);
