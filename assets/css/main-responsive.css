@@ -71,7 +71,7 @@ section {
 }
 
 section .body-content {
-    height: 100%;
+    min-height: 100%;
     padding: 5vw;
     display: flex;
     flex-direction: column;
