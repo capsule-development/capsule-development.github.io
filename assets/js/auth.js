@@ -56,6 +56,8 @@ if (signupForm) {
                 }).catch(function(error) {
                     $("#subtitle-sign").text(error);
                 });
+            }).catch(function(error) {
+                $("#subtitle-sign").text(error);
             });
         }
     });
