@@ -1,6 +1,10 @@
 // Fade pages on load
 $("body").hide();
-$(document).ready(function() {
-    $("body").fadeIn(500);
-});
+
+if (!$("#account-home").length) {
+	$(document).ready(function() {
+    	$("body").fadeIn(500);
+	});
+}
+
 

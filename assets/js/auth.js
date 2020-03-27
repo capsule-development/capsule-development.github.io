@@ -4,6 +4,7 @@ If not you could lose a handle on your sanity."- c0dine
 */
 
 function renderUI(user) {
+    $("body").fadeIn(500);
     if (user) {
         console.log("Saved previous sesssion!");
         console.log("User email: " + user.email);
