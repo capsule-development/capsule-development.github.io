@@ -232,7 +232,7 @@ button {
     width: 100%;
     height: 75px;
     background-color: rgba(236, 238, 255, 0.95);
-    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     z-index: 999;
     position: sticky;
     top: 0;
@@ -339,6 +339,7 @@ user .icon-container {
 }
 
 user a {
+    text-rendering: optimizeLegibility;
     color: #8080ff;
     position: absolute;
     top: 15;
