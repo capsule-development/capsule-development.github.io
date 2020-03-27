@@ -18,11 +18,6 @@ function renderUI(user) {
         $("#user-buttons").hide();
         $("#account-pp > img").attr("src", "https://trycapsuledev.github.io/assets/images/logo/logo.png");
     }
-    //fix the blank image 
-    if (user.photoURL == null) {
-        user.photoURL == "https://www.searchpng.com/wp-content/uploads/2019/02/Men-Profile-Image-715x657.png";
-        $("#account-pp > img").attr("src", user.photoURL);
-    }
 }
 
 // Listen for user
@@ -144,9 +139,12 @@ if (changePhoto) {
     changePhoto.addEventListener("click", (e) => {
         e.preventDefault();
 
-        const url = prompt("UI still a work in progress; give the new url:");
-        console.log(url)
-        if (url != "") {
+        var url = prompt("UI still a work in progress (\"d\" for default); give the new url:");
+        console.log("URL: [" + url + "]")
+        if (url) {
+            if (url == "d") {
+                url = "https://www.searchpng.com/wp-content/uploads/2019/02/Men-Profile-Image-715x657.png";
+            }
             auth.currentUser.updateProfile({
                 photoURL: url
             }).then(function() {
