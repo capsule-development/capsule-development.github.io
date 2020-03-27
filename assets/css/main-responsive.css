@@ -56,18 +56,17 @@ a {
     color: #8e8e93;
 }
 
-a:hover {
+section a:hover, navbar a:hover {
     color: #8080ff;
 }
 
 section {
-    overflow: auto;
     display: block;
     padding-left: 12vw;
     padding-right: 12vw;
     text-align: center;
     min-height: 100%;
-
+    overflow: hidden;
 }
 
 section .body-content {
@@ -77,6 +76,7 @@ section .body-content {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    overflow: hidden;
 }
 
 section .column {
@@ -158,7 +158,7 @@ section h2:hover, section .body-content h3:hover {
 }
 
 .buttons {
-    padding: 10vh 0;
+    padding-top: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -229,10 +229,11 @@ button {
     align-items: center;
     padding: 5px 10%;
     letter-spacing: 3px;
-    width: auto;
+    width: 100%;
     height: 75px;
     background-color: rgba(236, 238, 255, 0.95);
-    z-index: 99;
+    backdrop-filter: blur(5px);
+    z-index: 999;
     position: sticky;
     top: 0;
 }
@@ -295,10 +296,6 @@ button {
 .users {
     display: block;
     text-align: center;
-    -webkit-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
-    -moz-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
-    -o-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
-    transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
 }
 
 user {
@@ -309,7 +306,7 @@ user {
     text-align: center;
     padding: 20px;
     background-color: #202020;
-    border-radius: 25px 25px;
+    border-radius: 20px 20px;
     -webkit-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
     -moz-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
     -o-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
@@ -318,21 +315,47 @@ user {
 
 user p {
     font-size: 80%;
+    color: #8e8e93;
 }
 
 user h3 {
+    margin: 0;
+    margin-top: 10px;
     color: #8080ff;
 }
 
-user img {
-    max-width: 100px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 0 15px #ffffff;
+user .icon-container img {
+    width: 80px;
+    height: auto;
 }
 
-user:hover {
-    opacity: 0.8;
-    transform: scale(1.1);
+user .icon-container {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+user a {
+    color: #8080ff;
+    position: absolute;
+    top: 15;
+    right: 15;
+    -webkit-transition: all 400ms cubic-bezier(1.000, 0.005, 0.340, 1.000);
+    -moz-transition: all 400ms cubic-bezier(1.000, 0.005, 0.340, 1.000);
+    -o-transition: all 400ms cubic-bezier(1.000, 0.005, 0.340, 1.000);
+    transition: all 400ms cubic-bezier(1.000, 0.005, 0.340, 1.000); /* custom */
+}
+
+user a:hover {
+    opacity: 0.6;
+    transform: rotate(-360deg);
+}
+
+user img:hover {
+    transform: scale(1.2);
 }
 
 #logo {
@@ -418,8 +441,5 @@ user:hover {
         height: auto;
         padding-top: 50px;
         padding-bottom: 50px;
-    }
-    section img {
-        width: 100%;
     }
 }
