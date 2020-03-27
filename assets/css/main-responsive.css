@@ -44,6 +44,11 @@ html {
     color: #efefef;
 }
 
+body {
+    position: relative;
+    overscroll-behavior: contain;
+}
+
 div {
     display: block;
 }
@@ -62,10 +67,10 @@ a:hover {
 }
 
 section {
+
     padding-left: 12vw;
     padding-right: 12vw;
     min-height: 100%;
-    overflow: auto;
 }
 
 section .body-content {
@@ -237,12 +242,13 @@ button {
 }
 
 .nav__links li {
+    font-family: "SF UI Display Bold";
     display: inline-flex;
     padding: 0px 1vw;
-}
-
-.nav__links li {
-    font-family: "SF UI Display Bold";
+    -webkit-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
+    -moz-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
+    -o-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
+    transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
 }
 
 .nav__links {
@@ -262,11 +268,13 @@ button {
 }
 
 #about {
-    background-color: #ECEEFF;
+    backdrop-filter: blur(5px);
+    background-color: rgba(236, 238, 255, 0.97);
 }
 
 #features {
-    background-color: black;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.97);
 }
 
 #features h2,
@@ -275,14 +283,17 @@ button {
 }
 
 #performance {
-    background-color: #ECEEFF;
+    backdrop-filter: blur(5px);
+    background-color: rgba(236, 238, 255, 0.97);
 }
 
 #team {
+    background-color: rgba(255, 255, 255, 0.97);
     display: inline-flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
+    padding-top: 10vh;
 }
 
 #team p {

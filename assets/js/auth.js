@@ -7,13 +7,15 @@ function renderUI(user) {
     $("body").fadeIn(500);
     if (user) {
         console.log("Saved previous sesssion!");
-        console.log("User email: " + user.email);
+        console.log("User: " + user.displayName);
+        $("#logout").parent().show();
         $("#subtitle").text("Hello, " + user.displayName);
         $("#guest-buttons").hide();
         $("#account-pp > img").attr("src", user.photoURL);
         $("#user-buttons").fadeIn("slow");
     } else {
         console.log("No user logged in.");
+        $("#logout").parent().hide();
         $("#subtitle").text("Capsule Accounts have access to many features!");
         $("#guest-buttons").fadeIn("slow");
         $("#user-buttons").hide();
