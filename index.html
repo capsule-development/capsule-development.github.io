@@ -23,12 +23,12 @@
         <link rel="icon" href="assets/images/logo/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="assets/css/normalize.css">
         <link rel="stylesheet" href="assets/css/main-responsive.css">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="assets/css/" />
     </head>
     <body>
-        <div data-aos="zoom-in-down" class="nav-container">
+        <div class="nav-container">
             <a href="#"><img id="logo" src="assets/images/logo/logo-glyph.png"></a>
-            <navbar id="navbar">
+            <navbar data-aos-once="true" data-aos="fade-down" id="navbar">
                 <ul class="nav__links">
                     <li><a href="#about">ABOUT</a></li>
                     <li><a class="shrink" href="#features">FEATURES</a></li>
@@ -139,7 +139,7 @@
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/sm00th.js"></script>
     <!-- <script src="assets/js/onclickdropdown.js"></script> -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/aos.js"></script>
     <script>
         AOS.init({
             duration: 1000,
