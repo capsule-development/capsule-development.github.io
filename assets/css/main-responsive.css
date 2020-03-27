@@ -35,12 +35,11 @@ Gray: #8e8e93
 html {
     font-family: "SF UI Display Medium";
     width: auto;
-    color: #ffffff;
 }
 
 /*TOGGLE COLORS*/
 .dark {
-    background-color: #333333;
+    background: #333333;
     color: #efefef;
 }
 
@@ -269,7 +268,8 @@ button {
 
 #about {
     backdrop-filter: blur(5px);
-    background-color: rgba(236, 238, 255, 0.97);
+    background-color: #eceefff7;
+    color: #ffffff;
 }
 
 #features {
@@ -284,16 +284,18 @@ button {
 
 #performance {
     backdrop-filter: blur(5px);
-    background-color: rgba(236, 238, 255, 0.97);
+    background-color: #eceefff7;
+    color: #000000;
 }
 
 #team {
-    background-color: rgba(255, 255, 255, 0.97);
+    background-color: #fffffff7;
     display: inline-flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
     padding-top: 10vh;
+    color: #000000;
 }
 
 #team p {
