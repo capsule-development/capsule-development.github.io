@@ -43,11 +43,6 @@ html {
     color: #efefef;
 }
 
-body {
-    position: relative;
-    overscroll-behavior: contain;
-}
-
 div {
     display: block;
 }
@@ -66,13 +61,16 @@ a:hover {
 }
 
 section {
+    overflow: auto;
+    display: block;
     padding-left: 12vw;
     padding-right: 12vw;
+    text-align: center;
     min-height: 100%;
+
 }
 
 section .body-content {
-    text-align: center;
     height: 100%;
     padding: 5vw;
     display: flex;
@@ -255,6 +253,11 @@ button {
     margin: 0 13vw;
 }
 
+.nav-button img {
+    width: 20px;
+    height: 20px;
+}
+
 .nav-button {
     background-color: #8080ff;
     border-radius: 50%;
@@ -267,7 +270,6 @@ button {
 
 #about {
     background-color: #eceefff7;
-    color: #ffffff;
 }
 
 #features {
@@ -280,32 +282,19 @@ button {
 }
 
 #performance {
-    backdrop-filter: blur(5px);
     background-color: #eceefff7;
-    color: #000000;
 }
 
 #team {
     background-color: #fffffff7;
-    display: inline-flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
     padding-top: 10vh;
     color: #000000;
-}
-
-#team p {
-    margin: 10px;
-    font-size: 20px;
+    overflow-y: hidden;
 }
 
 .users {
     display: block;
     text-align: center;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
     -webkit-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
     -moz-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
     -o-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
@@ -316,7 +305,7 @@ user {
     width: 350px;
     flex-shrink: 1;
     display: inline-block;
-    margin: 25px;
+    margin: 1.4vw;
     text-align: center;
     padding: 20px;
     background-color: #202020;
@@ -325,6 +314,10 @@ user {
     -moz-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
     -o-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
     transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
+}
+
+user p {
+    font-size: 80%;
 }
 
 user h3 {
@@ -357,7 +350,6 @@ user:hover {
 }
 
 #account-home {
-    display: block;
     background-color:#E0E5EC;
     text-align: center;
 }
