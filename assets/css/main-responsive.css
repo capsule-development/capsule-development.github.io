@@ -64,7 +64,7 @@ section {
 section .body-content {
     text-align: center;
     height: 100%;
-    padding: 10vw;
+    padding: 5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
