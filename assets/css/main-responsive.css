@@ -37,6 +37,11 @@ html {
     width: auto;
 }
 
+body {
+    position: relative;
+    overscroll-behavior: contain;
+}
+
 div {
     display: block;
 }
@@ -55,10 +60,10 @@ a:hover {
 }
 
 section {
+
     padding-left: 12vw;
     padding-right: 12vw;
     min-height: 100%;
-    overflow: auto;
 }
 
 section .body-content {
@@ -256,11 +261,13 @@ button {
 }
 
 #about {
-    background-color: #ECEEFF;
+    backdrop-filter: blur(5px);
+    background-color: rgba(236, 238, 255, 0.97);
 }
 
 #features {
-    background-color: black;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.97);
 }
 
 #features h2,
@@ -269,14 +276,17 @@ button {
 }
 
 #performance {
-    background-color: #ECEEFF;
+    backdrop-filter: blur(5px);
+    background-color: rgba(236, 238, 255, 0.97);
 }
 
 #team {
+    background-color: rgba(255, 255, 255, 0.97);
     display: inline-flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
+    padding-top: 10vh;
 }
 
 #team p {
