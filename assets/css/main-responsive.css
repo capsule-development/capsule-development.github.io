@@ -433,13 +433,13 @@ user img:hover {
     user {
         width: 60vw;
     }
+
 }
 
 @media screen and (max-width: 1050px) {
     section .column {
+        min-height: 0;
         width: 100%;
         height: auto;
-        padding-top: 50px;
-        padding-bottom: 50px;
     }
 }
