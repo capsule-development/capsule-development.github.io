@@ -26,7 +26,7 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
-        <div class="nav-container">
+        <div data-aos="zoom-in-down" class="nav-container">
             <a href="#"><img id="logo" src="assets/images/logo/logo-glyph.png"></a>
             <navbar id="navbar">
                 <ul class="nav__links">
@@ -39,7 +39,7 @@
             <a class="nav-button" href="account"><img src="assets/images/logo/user.svg" width=20px/></a>
         </div>
         <section id="home">
-            <div class="body-content">
+            <div data-aos="zoom-in" class="body-content">
                 <h1>Capsule</h1>
                 <h3>An all new package manager for iOS</h3>
                 <div class="buttons">
@@ -59,7 +59,7 @@
             </div>
         </section>
         <section id="features">
-            <div class="body-content">
+            <div data-aos="fade-up" class="body-content">
                 <h2>Features</h2>
                 <p>With iOS 13 design kept in mind, we strive to provide a sleek and intuitive interface.</p>
                 <p><br>You can also setup a Capsule Account to sync repositories and tweaks across devices, control your package manager remotely, and more.
@@ -143,7 +143,7 @@
     <script>
         AOS.init({
             duration: 1000,
-            delay: 150,
+            delay: 50,
             easing: "ease-in-out-quart",
             once: false,
             mirror: false,
