@@ -66,7 +66,6 @@ a:hover {
 }
 
 section {
-
     padding-left: 12vw;
     padding-right: 12vw;
     min-height: 100%;
@@ -112,7 +111,7 @@ section h2, section h3 {
     transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
 }
 
-section h2:hover, section h3:hover {
+section h2:hover, section .body-content h3:hover {
     transform: scale(1.05);
 }
 
@@ -267,13 +266,11 @@ button {
 }
 
 #about {
-    backdrop-filter: blur(5px);
     background-color: #eceefff7;
     color: #ffffff;
 }
 
 #features {
-    backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.97);
 }
 
@@ -322,12 +319,21 @@ user {
     margin: 25px;
     text-align: center;
     padding: 20px;
-    background-color: #4f4f50f2;
+    background-color: #202020;
     border-radius: 25px 25px;
     -webkit-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
     -moz-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
     -o-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
     transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
+}
+
+user h3 {
+    color: #8080ff;
+}
+
+user img {
+    max-width: 100px;
+    border-radius: 50%;
 }
 
 user:hover {
@@ -420,84 +426,4 @@ user:hover {
     section img {
         width: 100%;
     }
-}
-
-.Thenatis{
-    background-color: #202020;
-    color: #efefef;
-}
-.h3the {
-    color: #8080ff;
-}
-
-.C0dine {
-    background-color: #202020;
-    color: #efefef;
-}
-.h3c0d {
-    color: #8080ff;
-}
-
-.Thomz {
-    background-color: #202020;
-    color: #efefef;
-}
-.h3tho {
-    color: #8080ff;
-}
-
-.Luke {
-    background-color: #202020;
-    color: #efefef;
-}
-.h3luk {
-    color: #8080ff;
-}
-
-.Machport {
-    background-color: #202020;
-    color: #efefef;
-}
-.h3mac {
-    color: #8080ff;
-}
-
-.B0kch01 {
-    background-color: #202020;
-    color: #efefef;
-}
-.h3b0k {
-    color: #8080ff;
-}
-
-.Pixeljellyfish {
-    background-color: #202020;
-    color: #efefef;
-}
-.h3pix {
-    color: #8080ff;
-}
-
-.Cryptic {
-    background-color: #202020;
-    color: #efefef;
-}
-.h3cry {
-    color: #8080ff;
-}
-
-.Coltonios {
-    background-color: #202020;
-    color: #efefef;
-}
-.h3Col {
-    color: #8080ff;
-}
-
-.J3nRa1n {
-    background-color: #202020;
-    color: #efefef;
-}
-.h3j3n{
-    color: #8080ff;
 }
