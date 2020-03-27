@@ -27,6 +27,11 @@ $(".pswd > input").on("keyup paste", function() {
     }
 });
 
+$("#account-pp").on("mousedown", function() {
+    console.log("hi")
+    $("#account-pp").css({"box-shadow": "inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;"});
+});
+
 
 // Makes sure that the input is always focused if there is text
 (function() {
