@@ -20,6 +20,7 @@ Contributors:
 - [@NASAConfirmsD2](https://twitter.com/NASAConfirmsD2) 
 - [@coltonios](https://twitter.com/coltonios) 
 - [@J3nRa1n](https://twitter.com/J3nRa1n)
+- [@Cryptic](https://twitter.com/cr4ptic)
 - [@pixeljellyfish](https://twitter.com/pixeljellyfish)<br/> 
 
 ### Twitter
