@@ -20,7 +20,7 @@ Contributors:
 - [Pixeljellyfish](https://twitter.com/pixeljellyfish)<br/> 
 
 ### Twitter
-[try_capsule](https://twitter.com/try_capsule) <br/>
+- [try_capsule](https://twitter.com/try_capsule) <br/>
 
 ### Discord Server
 [Discord Invite Link](https://discordapp.com/invite/pE28QcS) <br/>
