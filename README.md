@@ -10,7 +10,7 @@
 
 ## About
 
-### Capsule Package Manager for jailbroken devices!
+### Capsule Package Manager for Jailbroken Devices!
 Contributors:
 - [c0dine](https://twitter.com/c0dine)
 - [Thenatis1](https://twitter.com/Thenatis1) 
@@ -18,12 +18,6 @@ Contributors:
 - [J3nRa1n](https://twitter.com/J3nRa1n)
 - [Cryptic](https://twitter.com/cr4ptic)
 - [Pixeljellyfish](https://twitter.com/pixeljellyfish)<br/> 
-
-### Twitter
-- [try_capsule](https://twitter.com/try_capsule) <br/>
-
-### Discord Server
-[Discord Invite Link](https://discordapp.com/invite/pE28QcS) <br/>
 
 ### Bug Tracker
 [Capsule Bugs](https://github.com/trycapsuledev/Capsule-Bugs)<br/>
