@@ -376,7 +376,7 @@ user img:hover {
 }
 
 #account-home {
-    background-color:#E0E5EC;
+    background-color:rgb(255, 255, 255);
     text-align: center;
     overflow: auto;
     padding-top: 10vh;
