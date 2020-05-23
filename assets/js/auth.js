@@ -19,7 +19,6 @@ function renderUI(user) {
         $("#subtitle").text("Capsule Accounts have access to many features!");
         $("#guest-buttons").fadeIn("slow");
         $("#user-buttons").hide();
-        $("#account-pp > img").attr("src", "https://trycapsuledev.github.io/assets/images/logo/logo.png");
     }
 }
 
