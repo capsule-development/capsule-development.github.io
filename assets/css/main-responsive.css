@@ -248,13 +248,6 @@ button {
     text-decoration: none;
 }
 
- /* Right-aligned section inside the top navigation */
- .topnav-left {
-     float: left;
-     color: #ffffff;
-     align-items: 50px;
- }
-
 .nav-container {
     overflow: hidden;
     display: flex;
