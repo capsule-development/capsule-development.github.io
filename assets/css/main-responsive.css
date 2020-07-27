@@ -58,7 +58,6 @@ a {
 
 section a:hover, navbar a:hover {
     color: #8080ff;
-    display: flex;
 }
 
 section {
