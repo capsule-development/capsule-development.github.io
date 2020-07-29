@@ -37,10 +37,19 @@ html {
     width: auto;
 }
 
-/*TOGGLE COLORS*/
-.dark {
-    background: #333333;
-    color: #efefef;
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color:#333333;
+        color: #efefef;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
 }
 
 div {
