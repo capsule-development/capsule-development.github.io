@@ -1,3 +1,7 @@
+:root {
+    --main-bg-color: white;
+}
+
 @font-face {
     font-family: 'SF UI Display Light';
     font-style: normal;
@@ -39,13 +43,21 @@ html {
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
+    #about {
+        background-color: #333333;
+        color: white;
+    }
     body {
         background-color:#333333;
-        color: #efefef;
+        color: white;
     }
 }
 
 @media (prefers-color-scheme: light) {
+    #about {
+        background-color: white;
+        color: black;
+    }
     body {
         background-color: white;
         color: black;
@@ -305,12 +317,8 @@ button {
     opacity: 0.8;
 }
 
-#about {
-    background-color: #eceefff7;
-}
-
 #features {
-    background-color: rgba(0, 0, 0, 0.97);
+    background-color: var(--main-bg-color);
 }
 
 #features h2,
