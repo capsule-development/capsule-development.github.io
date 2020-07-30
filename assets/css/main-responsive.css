@@ -239,7 +239,6 @@ section h2:hover, section .body-content h3:hover {
     text-shadow: 1px 1px 0 #FFF;
     color: #61677C;
     font-weight: bold;
-    box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     font-weight: 600;
@@ -272,12 +271,10 @@ section h2:hover, section .body-content h3:hover {
 }
 
 .squish.neo-button:hover {
-    box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
     transform: scale(1);
 }
 
 .squish.neo-button:active {
-    box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
     transform: scale(1);
     transition: none;
 }
