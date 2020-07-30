@@ -467,8 +467,8 @@ user img:hover {
 }
 
 #account-pp img{
-    width: 20vw;
-    height: 20vw;
+    width: 100vw;
+    height: 100vw;
     max-width: 150px;
     max-height: 150px;
     object-fit:cover;
