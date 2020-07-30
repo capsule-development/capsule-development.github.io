@@ -18,6 +18,9 @@ Contributors:
 - [J3nRa1n](https://twitter.com/J3nRa1n)
 - [Cryptic](https://twitter.com/cr4ptic)
 - [Pixeljellyfish](https://twitter.com/pixeljellyfish)<br/> 
+- [ajaidan0](https://github.com/ajaidan0)<br/> 
+- [Thyke](https://thyke.xyz)<br/> 
+
 
 ### Bug Tracker
 [Capsule Bugs](https://github.com/trycapsuledev/Capsule-Bugs)<br/>
