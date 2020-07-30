@@ -253,19 +253,16 @@ section h2:hover, section .body-content h3:hover {
     background-color:#8080ff;
     color: #fcfcfc;
     font-weight: bold;
-    box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     font-weight: 600;
 }
 
 .squish.accounts-button:hover {
-    box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #8080ff;
     transform: scale(1);
 }
 
 .squish.accounts-button:active {
-    box-shadow: inset 1px 1px 2px #8080ff, inset -1px -1px 2px #FFF;
     transform: scale(1);
     transition: none;
 }
