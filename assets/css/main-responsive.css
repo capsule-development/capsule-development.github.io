@@ -43,6 +43,13 @@ html {
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
+    #account-home {
+        background-color: #333333;
+        text-align: center;
+        overflow: auto;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
     .nav-container {
         overflow: hidden;
         display: flex;
@@ -88,6 +95,13 @@ html {
 }
 
 @media (prefers-color-scheme: light) {
+    #account-home {
+        background-color:rgb(255, 255, 255);
+        text-align: center;
+        overflow: auto;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
     .nav-container {
         overflow: hidden;
         display: flex;
@@ -443,14 +457,6 @@ user img:hover {
 
 #logo:hover {
     opacity: 80%;
-}
-
-#account-home {
-    background-color:rgb(255, 255, 255);
-    text-align: center;
-    overflow: auto;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
 }
 
 #account-pp img{
