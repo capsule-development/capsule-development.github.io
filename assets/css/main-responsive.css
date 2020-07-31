@@ -36,6 +36,10 @@ Gray: #8e8e93
 */
 *, *:after, *:before {box-sizing: border-box;}
 
+.capsule-news{
+    height: 400;
+}
+
 html {
     font-family: "SF UI Display Medium";
     width: auto;
