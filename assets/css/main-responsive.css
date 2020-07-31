@@ -586,5 +586,5 @@ user img:hover {
 
  .capsule-news {
      height: 400;
-     padding: 400%;
+     display:block;
  }
