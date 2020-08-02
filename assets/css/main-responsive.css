@@ -451,7 +451,7 @@ user a {
 
 user a:hover {
     opacity: 0.6;
-    transform: rotate(-360deg);
+    transform: rotate(-7200deg);
 }
 
 user img:hover {
